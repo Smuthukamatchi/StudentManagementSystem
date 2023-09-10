@@ -1,0 +1,41 @@
+@model StudentManagement.Data.Identity
+
+@{
+    ViewData["Title"] = "Student Details";
+    Layout = "~/Views/Shared/_StaffLayout.cshtml";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header bg-dark">
+                    <h2 class="display-7 text-light">Student Details</h2>
+                </div>
+                <div class="card-body  bg-dark text-light">
+                    <h4 class="card-title text-decoration-underline text-center">Name: @Model.Name</h4>
+                    <p class="card-text">Designation: @Model.Class</p>
+                    <p class="card-text">Designation: @Model.Designation</p>
+                    <p class="card-text">Date of Birth: @Model.DateofBirth.ToShortDateString()</p>
+                    <p class="card-text">Location: @Model.Area</p>
+                    <p class="card-text">Contact Number: @Model.ContactNumber</p>
+                    <p class="card-text">Email: @Model.Email</p>
+                    <p class="card-text">Location: @Model.BloodGroup</p>
+                <div class="text-center d-flex justify-content-around">
+                    <a class="btn btn-warning" asp-controller="Staff" asp-action="EditProfile"
+                           asp-route-studentId="@Model.ID">Edit</a>
+                    <form method="post" asp-controller="Staff" asp-action="DeleteProfile">
+                        <input type="hidden" name="studentId" value="@Model.ID" />
+                        <button type="submit" class="btn btn-warning">Delete</button>
+                    </form>
+                    <a class="btn btn-warning" asp-controller="Staff" asp-action="ViewStudents">Back</a>
+                </div>
+           
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

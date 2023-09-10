@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StudentManagement
+build_property.RootNamespace = StudentManagement
+build_property.ProjectDir = e:\Shiva_Folder\StudentManagement\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = e:\Shiva_Folder\StudentManagement
+build_property._RazorSourceGeneratorDebug = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Shared/_PrincipalLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QcmluY2lwYWxMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Shared/_StaffLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdGFmZkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Shared/_StudentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHVkZW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/AddMarks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQWRkTWFya3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/AddStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQWRkU3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/AddSubjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQWRkU3ViamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/EditMarks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRWRpdE1hcmtzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/EditSubject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcRWRpdFN1YmplY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/Marks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcTWFya3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/PrincipalDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcUHJpbmNpcGFsRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/StaffDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3RhZmZEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/ViewMarks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcVmlld01hcmtzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/ViewRank.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcVmlld1JhbmsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/ViewStudentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcVmlld1N0dWRlbnREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/Viewstudents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcVmlld3N0dWRlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Staff/ViewSubjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcVmlld1N1YmplY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Student/Studentdashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTdHVkZW50ZGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Student/StudentMarks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTdHVkZW50TWFya3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Student/StudentRank.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTdHVkZW50UmFuay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Shiva_Folder/StudentManagement/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-y9obw7rtys

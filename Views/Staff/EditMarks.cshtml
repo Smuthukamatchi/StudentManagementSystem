@@ -1,0 +1,110 @@
+@model StudentManagement.Data.Mark
+
+@{
+    ViewData["Title"] = "Edit Marks";
+    Layout = "~/Views/Shared/_StaffLayout.cshtml";
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+
+<div class="container col-md-8">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header bg-dark">
+                    <h2 class="display-7 text-light">Edit Marks</h2>
+                </div>
+                <div class="card-body bg-dark text-light" style="max-height: 400px; overflow-y: auto;">
+                    <form method="post" asp-action="UpdateMarks" asp-controller="Staff">
+                        <div class="form-group">
+                            <label for="markId">Mark ID</label>
+                            <input type="text" id="markId" name="MarkId" value="@Model.MarkId" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" id="id" name="ID" value="@Model.ID" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="Name" value="@Model.Name" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Class</label>
+                            <input type="text" id="class" name="Class" value="@Model.Class" class="form-control" readonly />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject1Name">Subject 1 Name</label>
+                            <input type="text" id="subject1Name" name="Subject1Name" value="@Model.Subject1Name" class="form-control" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject1">Subject 1</label>
+                            <input type="text" id="subject1" name="Subject1" value="@Model.Subject1" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject2Name">Subject 2 Name</label>
+                            <input type="text" id="subject2Name" name="Subject2Name" value="@Model.Subject2Name" class="form-control" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject2">Subject 2</label>
+                            <input type="text" id="subject2" name="Subject2" value="@Model.Subject2" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject3Name">Subject 3 Name</label>
+                            <input type="text" id="subject3Name" name="Subject3Name" value="@Model.Subject3Name" class="form-control" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject3">Subject 3</label>
+                            <input type="text" id="subject3" name="Subject3" value="@Model.Subject3" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject4Name">Subject 4 Name</label>
+                            <input type="text" id="subject4Name" name="Subject4Name" value="@Model.Subject4Name" class="form-control" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject4">Subject 4</label>
+                            <input type="text" id="subject4" name="Subject4" value="@Model.Subject4" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject5Name">Subject 5 Name</label>
+                            <input type="text" id="subject5Name" name="Subject5Name" value="@Model.Subject5Name" class="form-control" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject5">Subject 5</label>
+                            <input type="text" id="subject5" name="Subject5" value="@Model.Subject5" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject6Name">Subject 6 Name</label>
+                            <input type="text" id="subject6Name" name="Subject6Name" value="@Model.Subject6Name" class="form-control" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject6">Subject 6</label>
+                            <input type="text" id="subject6" name="Subject6" value="@Model.Subject6" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="total">Total</label>
+                            <input type="text" id="total" name="Total" value="@Model.Total" class="form-control" />
+                        </div>
+
+                        <div class="text-center fw-bold">
+                            <button type="submit" class="btn btn-warning">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <script>
+        // Display the success message using a toast or alert
+        alert('@successMessage');
+    </script>
+}

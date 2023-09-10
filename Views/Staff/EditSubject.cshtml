@@ -1,0 +1,65 @@
+@model StudentManagement.Data.Subject
+
+@{
+    ViewData["Title"] = "Edit Subject";
+    Layout = "~/Views/Shared/_PrincipalLayout.cshtml";
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+
+<div class="text-begin">
+    <h2 class="display-7 justify-content-center text-warning">Edit Subject</h2>
+</div>
+
+<div class="container col-md-8">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body bg-dark text-light" style="max-height: 400px; overflow-y: auto;">
+                    <form method="post" asp-action="UpdateSubject" asp-controller="Staff">
+                        @Html.HiddenFor(model => model.subjectId)
+                        <div class="form-group">
+                            <label for="class">Class</label>
+                            <input type="text" id="class" name="Class" value="@Model.Class" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Subject 1</label>
+                            <input type="text" id="subject1" name="Subject1" value="@Model.Subject1" class="form-control"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Subject 2</label>
+                            <input type="text" id="subject2" name="Subject2" value="@Model.Subject2" class="form-control"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Subject 3</label>
+                            <input type="text" id="Subject3" name="Subject3" value="@Model.Subject3" class="form-control"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Subject 4</label>
+                            <input type="text" id="Subject4" name="Subject4" value="@Model.Subject4" class="form-control"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Subject 5</label>
+                            <input type="text" id="subject5" name="Subject5" value="@Model.Subject5" class="form-control"  />
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Optional Subject</label>
+                            <input type="text" id="subject6" name="Subject6" value="@Model.Subject6" class="form-control"  />
+                        </div>
+                        <!-- Add similar input fields for Subject1, Subject2, ..., Subject6 -->
+
+                        <div class="text-center fw-bold p-2">
+                            <button type="submit" class="btn btn-warning">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <script>
+        // Display the success message using a toast or alert
+        alert('@successMessage');
+    </script>
+}

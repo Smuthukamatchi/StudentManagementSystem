@@ -1,0 +1,87 @@
+@model StudentManagement.Data.Subject
+
+@{
+    ViewData["Title"] = "Marks";
+    Layout = "~/Views/Shared/_StaffLayout.cshtml";
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card bg-dark text-light">
+                <div class="text-begin card-header">
+                    <h2 class="display-7 text-light">Enter Marks for Class @ViewData["Class"]</h2>
+                </div>
+                <div class="card-body p-3" style="max-height: 400px; overflow-y: auto;">
+                    <form method="post" asp-controller="Staff" asp-action="SaveMarks">
+                        <input type="hidden" id="ID" name="ID" value="@ViewData["ID"]" />
+                        <input type="hidden" id="class" name="Class" value="@ViewData["Class"]" />
+                        <input type="hidden" id="Name" name="Name" value="@ViewData["Name"]" />
+
+                        <div class="form-group">
+                            <label for="ID">Student ID</label>
+                            <input type="text" id="ID" name="studentIDId" value="@ViewData["ID"]" class="form-control" readonly />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="class">Class</label>
+                            <input type="text" id="class" name="class" value="@ViewData["Class"]" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Name</label>
+                            <input type="text" id="Name" name="Name" value="@ViewData["Name"]" class="form-control" readonly />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>@Model.Subject1</label>
+                            <input type="hidden" id="Subject1Name" name="Subject1Name" class="form-control" required value="@Model.Subject1" />
+                            <input type="number" id="Subject1" name="Subject1" class="form-control" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>@Model.Subject2</label>
+                            <input type="hidden" id="Subject2Name" name="Subject2Name" class="form-control" required value="@Model.Subject2" />
+                            <input type="number" id="Subject2" name="Subject2" class="form-control" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>@Model.Subject3</label>
+                            <input type="hidden" id="Subject3Name" name="Subject3Name" class="form-control" required value="@Model.Subject3" />
+                            <input type="number" id="Subject3" name="Subject3" class="form-control" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>@Model.Subject4</label>
+                            <input type="hidden" id="Subject4Name" name="Subject4Name" class="form-control" required value="@Model.Subject4" />
+                            <input type="number" id="Subject4" name="Subject4" class="form-control" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>@Model.Subject5</label>
+                            <input type="hidden" id="Subject5Name" name="Subject5Name" class="form-control" required value="@Model.Subject5" />
+                            <input type="number" id="Subject5" name="Subject5" class="form-control" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>@Model.Subject6</label>
+                            <input type="hidden" id="Subject6Name" name="Subject6Name" class="form-control" required value="@Model.Subject6" />
+                            <input type="number" id="Subject6" name="Subject6" class="form-control" required />
+                        </div>
+
+                        <div class="text-center p-3">
+                            <button type="submit" class="btn btn-warning">Submit Marks</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(successMessage))
+{
+    <script>
+        alert('@successMessage');
+    </script>
+}

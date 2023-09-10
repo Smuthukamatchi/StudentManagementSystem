@@ -1,0 +1,56 @@
+@model StudentManagement.Data.Subject
+
+@{
+    ViewData["Title"] = "Add Subjects";
+    Layout = "~/Views/Shared/_PrincipalLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card bg-dark text-light">
+                <div class="text-begin card-header">
+                    <h2 class="display-7 text-light">Add Subjects</h2>
+                </div>
+                <div class="card-body p-3" style="max-height: 400px; overflow-y: auto;">
+                    @using (Html.BeginForm("AddSubjects", "Staff", FormMethod.Post))
+                    {
+                        <div class="form-group">
+                            @Html.Label("Class")
+                            @Html.TextBoxFor(model => model.Class, new { @class = "form-control", placeholder = "Enter class" })
+                        </div>
+                        
+                        <div class="form-group">
+                            @Html.Label("Subject 1")
+                            @Html.TextBoxFor(model => model.Subject1, new { @class = "form-control", placeholder = "Enter subject 1" })
+                        </div>
+                        <!-- Repeat the above code for Subject 2 to Subject 6 -->
+                        <div class="form-group">
+                            @Html.Label("Subject 2")
+                            @Html.TextBoxFor(model => model.Subject2, new { @class = "form-control", placeholder = "Enter subject 2" })
+                        </div>
+                        <div class="form-group">
+                            @Html.Label("Subject 3")
+                            @Html.TextBoxFor(model => model.Subject3, new { @class = "form-control", placeholder = "Enter subject 3" })
+                        </div>
+                        <div class="form-group">
+                            @Html.Label("Subject 4")
+                            @Html.TextBoxFor(model => model.Subject4, new { @class = "form-control", placeholder = "Enter subject 4" })
+                        </div>
+                        <div class="form-group">
+                            @Html.Label("Subject 5")
+                            @Html.TextBoxFor(model => model.Subject5, new { @class = "form-control", placeholder = "Enter subject 5" })
+                        </div>
+                        <div class="form-group">
+                            @Html.Label("Subject 6")
+                            @Html.TextBoxFor(model => model.Subject6, new { @class = "form-control", placeholder = "Enter subject 6" })
+                        </div>
+                        <div class="btn-container text-center p-3">
+                            <input type="submit" value="Add Subjects" class="btn btn-warning">
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

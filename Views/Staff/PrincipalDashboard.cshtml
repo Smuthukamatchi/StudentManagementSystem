@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Principal Dashboard";
+    Layout = "~/Views/Shared/_PrincipalLayout.cshtml";
+}
+
+<!-- Content of the AdminDashboard view goes here -->
+    <div class="container-fluid justify-content-center align-items-middle" >
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card text-center bg-dark">
+                    <div class="card-body ">
+                         <h1 class="display-4 text-light">Welcome</h1>
+                        <h2 class="text-warning fw-bold">@ViewData["StaffName"]</h2>
+                        <h5 class="display-7 text-light">To Principal Dashboard</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
